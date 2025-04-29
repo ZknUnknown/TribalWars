@@ -6,6 +6,7 @@
 // @description 	    script construtor para game tribalwars, realiza upagem “Upar” dos edifícios do game, script realiza a atividade em formato inicial resolvendo as Quest do game, e após o término das Quest o script realiza upagem de acordo com perfil pré definido pelo autor do script. (mas pode ser modificado a alteração de como e feito a upagem, pelo próprio usuário.
 // @author		        Marcos v.s Marques
 // @match             https*://*/*screen=main*
+// @match             https*://*/*screen=main#
 // @version     	    0.0.1
 // @supportURL          https://github.com/tribalwarsbr100/Upador-Tribal-Wars/issues
 // @grant               GM_getResourceText
