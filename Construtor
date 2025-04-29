@@ -38,7 +38,7 @@ const Etapa = "Etapa_1";
 
 // Escolha se você deseja que o bot enfileire os edifícios na ordem definida (= true) ou
 // assim que um prédio estiver disponível para a fila de construção (= false)
-const Construção_Edificios_Ordem = true;
+const Construção_Edificios_Ordem = false;
 
 
 //********* /CONFIGURAÇÃO *********//
@@ -753,16 +753,6 @@ function getConstrução_Edifcios_Serie() {
     Sequência_Construção.push("main_buildlink_market_24");
     // Construção Mercado 25
     Sequência_Construção.push("main_buildlink_market_25");
-    // Construção Esconderijo 3
-    Sequência_Construção.push("main_buildlink_hide_6");
-    // Construção Esconderijo 3
-    Sequência_Construção.push("main_buildlink_hide_7");
-    // Construção Esconderijo 8
-    Sequência_Construção.push("main_buildlink_hide_8");
-    // Construção Esconderijo 9
-    Sequência_Construção.push("main_buildlink_hide_9");
-    // Construção Esconderijo 10
-    Sequência_Construção.push("main_buildlink_hide_10");
 
     return Sequência_Construção;
 
