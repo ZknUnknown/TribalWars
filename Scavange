@@ -132,29 +132,3 @@
     location.reload(true);
   }, reloadTime);
 })();
-// ==/UserScript==
-
-(function() {
-    'use strict';
-
-    function clicarBotaoAbrir() {
-        const botoes = document.querySelectorAll('a.btn.btn-default');
-        for (const botao of botoes) {
-            if (botao.textContent.trim() === "Abrir") {
-                console.log("Botão 'Abrir' encontrado! Clicando...");
-                botao.click();
-                return; // Sai após o primeiro clique
-            }
-        }
-    }
-
-    // Observa mudanças no DOM para garantir que o botão seja clicado quando aparecer
-    const observer = new MutationObserver(() => {
-        clicarBotaoAbrir();
-    });
-
-    observer.observe(document.body, { childList: true, subtree: true });
-
-    // Executa imediatamente caso o botão já esteja carregado
-    clicarBotaoAbrir();
-})();
